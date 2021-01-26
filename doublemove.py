@@ -1,2 +1,2 @@
 import pyvjoy
-print("hello")
+from joystick import function
