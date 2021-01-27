@@ -1,9 +1,9 @@
 import sys, subprocess
 
-subprocess.check_call([sys.executable, '-m', 'pip', 'install', 
-'pyvjoy'])
-subprocess.check_call([sys.executable, '-m', 'pip', 'install', 
-'keyboard'])
+# subprocess.check_call([sys.executable, '-m', 'pip', 'install', 
+# 'pyvjoy'])
+# subprocess.check_call([sys.executable, '-m', 'pip', 'install', 
+# 'keyboard'])
 
 
 import pyvjoy, keyboard
