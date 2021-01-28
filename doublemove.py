@@ -32,16 +32,16 @@ def move_right(simCon):
     simCon.set_value('AxisLy', -10000) # using -8150 here will give you around max angle.
     print("diagonal right")
 
-def move_backLeft(simCon): # This is not working right now?
+def move_backLeft(simCon):
     # moves joystick back and to the left
-    simCon.set_Value('AxisLx', 1)
-    simCon.set_Value('AxisLy', 1)
+    simCon.set_value('AxisLx', -32768)
+    simCon.set_value('AxisLy', -1)
     print("backleft")
 
-def move_backRight(simCon): # This is not working right now?
+def move_backRight(simCon):
     # moves joystick back and to the right
-    simCon.set_Value('AxisLx', 1)
-    simCon.set_Value('AxisLy', -1)
+    simCon.set_value('AxisLx', 1)
+    simCon.set_value('AxisLy', -1)
     print("backright")
 
 def resetStick(simCon):
@@ -74,11 +74,11 @@ def main():
 
         elif keyboard.is_pressed('a'):
             move_true_left(simCon)
-            reset_stick_y(simCon)
+           # reset_stick_y(simCon)
         
         elif keyboard.is_pressed('d'):
             move_true_right(simCon)
-            reset_stick_y(simCon)
+            #reset_stick_y(simCon)
 
         elif keyboard.is_pressed('s'):
             move_backward(simCon)
