@@ -5,44 +5,36 @@ print("The script has started without error.")
 def move_forward(simCon):
     # Moves joystick forwards
     simCon.set_value('AxisLy', 1)
-    print("forward")
 
 def move_backward(simCon):
     #moves joystick backwards
     simCon.set_value('AxisLy', -1)
-    print("backward")
 
 def move_true_left(simCon):
     simCon.set_value('AxisLx', -1)
-    print("true_left")
 
 def move_true_right(simCon):
     simCon.set_value('AxisLx', 1)
-    print("true_right")
 
 def move_left(simCon):
     # Moves joystick to the Left
     simCon.set_value('AxisLx', -32768)
     simCon.set_value('AxisLy', -10000) # using -8150 here will give you around max angle.
-    print("diagonal left")
 
 def move_right(simCon):
     # Moves joystick to the Right
     simCon.set_value('AxisLx', 1)
     simCon.set_value('AxisLy', -10000) # using -8150 here will give you around max angle.
-    print("diagonal right")
 
 def move_backLeft(simCon):
     # moves joystick back and to the left
     simCon.set_value('AxisLx', -32768)
     simCon.set_value('AxisLy', -1)
-    print("backleft")
 
 def move_backRight(simCon):
     # moves joystick back and to the right
     simCon.set_value('AxisLx', 1)
     simCon.set_value('AxisLy', -1)
-    print("backright")
 
 def resetStick(simCon):
     # Keeps joystick at the center position for no micro movements in other directions.
