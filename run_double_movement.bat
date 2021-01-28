@@ -1,3 +1,1 @@
-pip install keyboard
-pip install pyxinput
-python doublemove.py
+.\Python39\python.exe doublemove.py
